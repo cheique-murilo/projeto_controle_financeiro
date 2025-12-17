@@ -101,7 +101,7 @@
   <h2>🧩 Database architecture</h2>
   <div class="card">
     <img src="assets/fluxo.png" alt="Architecture Diagram">
-    <p>Python → SQL Server (MERGE) → Power BI</p>
+    <p>Excel → Python → SQL Server (MERGE) → Power BI</p>
   </div>
 </section>
 
@@ -115,20 +115,24 @@
       <li>Generating unique audit hashes</li>
       <li>Sending data to SQL Server using MERGE</li>
     </ul>
-    <img src="assets/import_merge_python.txt" alt="Python Code Example">
+    <a href="https://github.com/cheique-murilo/project_1_financial_control/blob/main/src/importar_dados.py" target="_blank">
+    📄 Ver código Python no GitHub
+    </a>
+
   </div>
 </section>
 
 <section>
-  <h2>🗄 SQL Server (MERGE)</h2>
+  <h2>🗄 SQL Server as a database</h2>
   <div class="card">
     <p>The SQL layer ensures:</p>
     <ul>
       <li>No duplicated records</li>
       <li>Incremental loading</li>
       <li>Audit consistency</li>
+      
     </ul>
-    <img src="assets/database.png" alt="SQL MERGE Example">
+    <img src="assets/database_sql.png" alt="SQL structure">
   </div>
 </section>
 
