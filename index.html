@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Financial Control ERP – Project Overview</title>
+  <title>Mini ERP para controle financeiro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -84,23 +84,26 @@
 <body>
 
 <header>
-  <h1>Financial Control ERP 📈</h1>
-  <p>A solution for moving from Excel to an SQL database integrated with PBI.</p>
+  <h1>Controle financeiro (mini ERP) 📈</h1>
+  <p>Uma solução para sair do excel e montar uma base de dados no SQL e vincular reportes via PBI</p>
 </header>
 
 <section>
-  <h2>📌 Project Overview</h2>
+  <h2>📌 Visão geral do projeto/h2>
   <div class="card">
     <p>
-      Vou melhorar esse texto
+      Este é um exemplo de um projeto de consultoria para micro e pequenas empresas que querem profissionalizar controle financeiro e/ou de gestão.
+      Uma maneira simples de sair de controles em planilhas de excel para um ambiente de banco de dados (SQL) e, posteriormente, utilizar ferramentas de BI para gerar relatórios.
+      Utilizamos dados fictícios para simular um projeto de consultoria que entregamos para uma pequena empresa de peças.
     </p>
   </div>
 </section>
 
 <section>
-  <h2>🧩 Database architecture</h2>
+  <h2>🧩 Arquitetura do projeto</h2>
   <div class="card">
     <img src="assets/fluxo.png" alt="Architecture Diagram">
+    <p>De onde saímos para onde fomos - fluxo</p>
     <p>Excel → Python → SQL Server (MERGE) → Power BI</p>
   </div>
 </section>
@@ -108,12 +111,12 @@
 <section>
   <h2>🐍 Python ETL</h2>
   <div class="card">
-    <p>Python is responsible for:</p>
+    <p>O python utilizamos para:</p>
     <ul>
-      <li>Reading Excel files</li>
-      <li>Cleaning and validating data</li>
-      <li>Generating unique audit hashes</li>
-      <li>Sending data to SQL Server using MERGE</li>
+      <li>Ler os arquivos do excel</li>
+      <li>Limpar e validar os dados</li>
+      <li>Gerar "hash" únicos para auditoria</li>
+      <li>Usar o merge para enviar os dados para o SQL</li>
     </ul>
     <a href="https://github.com/cheique-murilo/project_1_financial_control/blob/main/src/importar_dados.py" target="_blank">
     📄 Ver código Python no GitHub
@@ -123,13 +126,13 @@
 </section>
 
 <section>
-  <h2>🗄 SQL Server as a database</h2>
+  <h2>🗄 SQL Server</h2>
   <div class="card">
-    <p>The SQL layer ensures:</p>
+    <p>Usamos o SQL para o banco de dados e assegurar que:</p>
     <ul>
-      <li>No duplicated records</li>
-      <li>Incremental loading</li>
-      <li>Audit consistency</li>
+      <li>Não ter lançamentos duplicados no banco de dados</li>
+      <li>Facilitar a incrementação de novos dados</li>
+      <li>Facilitar a auditoria dos dados</li>
       
     </ul>
     <img src="assets/database_sql.png" alt="SQL structure">
@@ -139,11 +142,11 @@
 <section>
   <h2>📊 Power BI Dashboard</h2>
   <div class="card">
-    <p>The dashboard provides:</p>
+    <p>O Power BI como ferramenta de relatórios diversos como:</p>
     <ul>
-      <li>Cash flow analysis</li>
-      <li>Expense and revenue tracking</li>
-      <li>Audit validation</li>
+      <li>Análise de cash flow</li>
+      <li>Acompanhamento de receitas e despesas</li>
+      <li>Validação da auditoria</li>
       <li>Orçado vs Realizado</li>
     </ul>
     <img src="assets/pbi.png" alt="Power BI Dashboard">
