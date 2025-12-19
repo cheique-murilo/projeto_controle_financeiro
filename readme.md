@@ -1,22 +1,21 @@
-# 📊 Sistema integrado de controle financeiro, auditoria e automação  
-### Python • SQL Server • Power BI • ETL • Auditoria Contábil
+📊 Integrated Financial Control, Audit, and Automation System
+Python • SQL Server • Power BI • ETL • Accounting Audit
 
-## 🎯 Visão Geral
+🎯 Overview
+This project implements a complete financial control and analytical visualization system, integrating:
 
-Este projeto implementa um sistema completo de **controle financeiro** e **visualização analítica**, integrando:
+✅ Python for ingestion, cleaning, "hash" generation, and MERGE-based incremental loading and deduplication 
+✅ SQL Server as the central database 
+✅ Power BI for financial dashboards and audit validation 
+✅ A full ETL pipeline that transforms Excel data into a robust, validated, and consistent dataset
 
-- ✅ Python para ingestão, limpeza e geração de hash e merge para carga incremental e deduplicação
-- ✅ SQL Server como banco de dados 
-- ✅ Power BI para dashboards financeiros e auditoria  
-- ✅ transformar dados do excel para um ETL robusto com validação e consistência de dados  
+The goal is to provide a scalable and reliable solution for small businesses that need:
 
-O objetivo é fornecer uma solução escalável e confiável para pequenas empresas que precisam de:
-
-- Controle financeiro centralizado  
-- Auditoria automática de lançamentos  
-- Detecção de duplicidades  
-- Dashboards profissionais  
-- Histórico limpo e confiável
-- sair do excel
+- Centralized financial control
+- Automated audit of financial entries
+- Duplicate detection
+- Professional dashboards
+- Clean and trustworthy historical data
+- A transition away from Excel into a structured data environment
 
 
