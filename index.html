@@ -1,82 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Mini ERP para controle financeiro</title>
+  <title>Mini ERP para Controle Financeiro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Inter', sans-serif;
       background: #0f0f1a;
-      color: #fff;
+      color: #e6e6e6;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
     }
 
     header {
-      background: #1a1a2e;
-      padding: 40px 20px;
       text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding: 60px 20px;
+      background: #151526;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
 
     header h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       margin-bottom: 10px;
+      font-weight: 600;
     }
 
     header p {
-      opacity: 0.8;
-      max-width: 700px;
+      opacity: 0.75;
+      max-width: 650px;
       margin: auto;
+      font-size: 1rem;
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
+      max-width: 850px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       margin-bottom: 15px;
-      color: #7b68ee;
+      color: #8f82ff;
+      font-weight: 600;
     }
 
     .card {
-      background: rgba(255,255,255,0.06);
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 25px;
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 30px;
     }
 
     img {
       width: 100%;
-      border-radius: 12px;
-      margin-top: 10px;
-      margin-bottom: 20px;
+      border-radius: 10px;
+      margin: 15px 0;
     }
 
     a.button {
       display: inline-block;
       padding: 12px 22px;
-      background: #7b68ee;
+      background: #8f82ff;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-weight: 600;
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
     footer {
       text-align: center;
       padding: 30px;
-      opacity: 0.6;
+      opacity: 0.5;
       font-size: 0.9rem;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -84,17 +86,17 @@
 <body>
 
 <header>
-  <h1>Controle financeiro (mini ERP) 📈</h1>
-  <p>Uma solução para sair do excel e montar uma base de dados no SQL e vincular reportes via PBI</p>
+  <h1>Mini ERP para Controle Financeiro 📈</h1>
+  <p>Transformando planilhas em um sistema profissional com SQL Server, Python e Power BI.</p>
 </header>
 
 <section>
-  <h2>📌 Visão geral do projeto/h2>
+  <h2>📌 Visão geral do projeto</h2>
   <div class="card">
     <p>
-      Este é um exemplo de um projeto de consultoria para micro e pequenas empresas que querem profissionalizar controle financeiro e/ou de gestão.
-      Uma maneira simples de sair de controles em planilhas de excel para um ambiente de banco de dados (SQL) e, posteriormente, utilizar ferramentas de BI para gerar relatórios.
-      Utilizamos dados fictícios para simular um projeto de consultoria que entregamos para uma pequena empresa de peças.
+      Este projeto demonstra como pequenas empresas podem evoluir de controles manuais em Excel para um ambiente mais profissional 
+      como um banco de dados em SQL e utilizar relatórios em Power BI.
+      Os dados utilizados são fictícios, simulando um cenário real de consultoria para uma empresa de peças.
     </p>
   </div>
 </section>
@@ -102,60 +104,59 @@
 <section>
   <h2>🧩 Arquitetura do projeto</h2>
   <div class="card">
-    <img src="assets/fluxo.png" alt="Architecture Diagram">
-    <p>De onde saímos para onde fomos - fluxo</p>
-    <p>Excel → Python → SQL Server (MERGE) → Power BI</p>
+    <img src="assets/fluxo.png" alt="Fluxo do projeto">
+    <p>Fluxo completo: Excel → Python → SQL Server (MERGE) → Power BI</p>
   </div>
 </section>
 
 <section>
   <h2>🐍 Python ETL</h2>
   <div class="card">
-    <p>O python utilizamos para:</p>
+    <p>O Python foi utilizado para:</p>
     <ul>
-      <li>Ler os arquivos do excel</li>
-      <li>Limpar e validar os dados</li>
-      <li>Gerar "hash" únicos para auditoria</li>
-      <li>Usar o merge para enviar os dados para o SQL</li>
+      <li>Ler arquivos Excel</li>
+      <li>Limpar e validar dados</li>
+      <li>Gerar hashes únicos para auditoria</li>
+      <li>Enviar dados ao SQL Server via MERGE</li>
     </ul>
     <a href="https://github.com/cheique-murilo/project_1_financial_control/blob/main/src/importar_dados.py" target="_blank">
-    📄 Ver código Python no GitHub
+      📄 Ver código Python no GitHub
     </a>
-
   </div>
 </section>
 
 <section>
-  <h2>🗄 SQL Server</h2>
+  <h2>💻 SQL Server</h2>
   <div class="card">
-    <p>Usamos o SQL para o banco de dados e assegurar que:</p>
+    <p>O SQL Server garante:</p>
     <ul>
-      <li>Não ter lançamentos duplicados no banco de dados</li>
-      <li>Facilitar a incrementação de novos dados</li>
-      <li>Facilitar a auditoria dos dados</li>
-      
+      <li>Evitar duplicações</li>
+      <li>Carregamentos incrementais</li>
+      <li>Auditoria confiável</li>
     </ul>
-    <img src="assets/database_sql.png" alt="SQL structure">
+    <img src="assets/database_sql.png" alt="Estrutura SQL">
   </div>
 </section>
 
 <section>
   <h2>📊 Power BI Dashboard</h2>
   <div class="card">
-    <p>O Power BI como ferramenta de relatórios diversos como:</p>
+    <p>O Power BI fornece relatórios como:</p>
     <ul>
-      <li>Análise de cash flow</li>
-      <li>Acompanhamento de receitas e despesas</li>
-      <li>Validação da auditoria</li>
+      <li>Cash flow</li>
+      <li>Receitas e despesas</li>
+      <li>Auditoria dos dados</li>
       <li>Orçado vs Realizado</li>
     </ul>
-    <img src="assets/pbi.png" alt="Power BI Dashboard">
+    <img src="assets/pbi.png" alt="Dashboard Power BI">
   </div>
 </section>
 
 <section>
-  <h2>📁 GitHub Repository</h2>
-  <a href="https://github.com/cheique-murilo/project_1_financial_control" class="button" target="_blank">View on GitHub</a>
+  <h2>📁 Repositório GitHub</h2>
+  <a href="https://github.com/cheique-murilo/project_1_financial_control" class="button" target="_blank">
+    Acessar Repositório
+  </a>
 </section>
 
 <footer>
